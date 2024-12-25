@@ -5,32 +5,32 @@ void main() async {
 
   while (true) {
     try {
-      print("enter number1: ");
+      print("Enter number1: ");
       int a = int.parse(stdin.readLineSync()!);
-      print("enter sign: ");
+      print("Enter sign: ");
       String sign = stdin.readLineSync()!;
-      print("enter number2: ");
+      print("Enter number2: ");
       int b = int.parse(stdin.readLineSync()!);
       switch (sign) {
         case "+":
           await Future.delayed(Duration(seconds: 5));
-          print(cal.add(a, b));
+          print("Sum: ${cal.add(a, b)}");
           break;
         case "-":
           await Future.delayed(Duration(seconds: 5));
-          print(cal.sub(a, b));
+          print("Subtracted: ${cal.sub(a, b)}");
           break;
         case "*":
           await Future.delayed(Duration(seconds: 5));
-          print(cal.mul(a, b));
+          print("Multiplied: ${cal.mul(a, b)}");
           break;
         case "/":
           await Future.delayed(Duration(seconds: 5));
-          print(cal.div(a, b));
+          print("Divided: ${cal.div(a, b)}");
           break;
         case "%":
           await Future.delayed(Duration(seconds: 5));
-          print(cal.mod(a, b));
+          print("Modulus(Remainder): ${cal.mod(a, b)}");
           break;
         default:
           print("INVALID SIGN");
