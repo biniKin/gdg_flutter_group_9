@@ -8,11 +8,11 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false, //for the dark theme
+      debugShowCheckedModeBanner: false, 
       home: Mat(),
     );
   }
